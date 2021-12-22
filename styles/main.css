@@ -30,7 +30,7 @@ main{
 .container_img{
     position: relative;
     margin-bottom: 10px;
-    max-width: 280px;
+    width: 280px;
     height: 280px;
     border-radius: 10px;
     background-image: url("../images/image-equilibrium.jpg");
