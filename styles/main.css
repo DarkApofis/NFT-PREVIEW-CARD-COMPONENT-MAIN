@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Soft-blue:hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --main-BG: hsl(217, 54%, 11%);
+    --card-BG: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    min-width: 375px;
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--main-BG);
+}
+main{
+    width: 327px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: var(--card-BG);
+}
+.container__img{
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+.primary-img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.container__icon-view{
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 277px;
+    opacity: 0.5;
+    border-radius: 10px;
+    background-color: var(--Cyan);
+}
+.icon__view{
+    position: absolute;
+    left: calc(50% - 24px);
+    right: 0;
+    top: calc(50% - 24px);
+    bottom: 0;
+}
+.container__img:active .container__icon-view{
+    display: block;
+}
+.main__info{
+    margin-bottom: 15px;
+    border-bottom: 1px solid var(--line);
+}
+.main__info--title{
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: var(--White);
+    cursor: pointer;
+}
+.main__info--title:active{
+    color: var(--Cyan);
+}
+.main__info--description{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--Soft-blue);
+}
+.main__info--price{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.price__time, .price{
+    display: flex;
+    align-items: center;
+}
+.price{
+    color: var(--Cyan);
+}
+.price__time{
+    color: var(--Soft-blue);
+}
+.main__info--price li svg{
+    margin-right: 5px;
+}
+footer{
+    display: flex;
+    align-items: center;
+}
+.icon-img{
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+}
+.footer__creator--name{
+    color: var(--Soft-blue);
+}
+.footer__creator--name span{
+    color: var(--White);
+    cursor: pointer;
+}
+.footer__creator--name span:active{
+    color:var(--Cyan)
+}
