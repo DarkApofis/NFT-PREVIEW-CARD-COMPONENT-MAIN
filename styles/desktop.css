@@ -1,0 +1,17 @@
+main{
+    width: 350px;
+}
+.container_img{
+    margin-bottom: 30px;
+    width: 305px;
+    height: 305px;
+}
+.main__info--title{
+    margin-bottom: 25px;
+}
+.main__info--description{
+    margin-bottom: 25px;
+}
+.main__info--details{
+    margin-bottom: 20px;
+}
